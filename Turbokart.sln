@@ -3,9 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{B87C8AD4-7038-4AD7-A2BB-662B8419068F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LapTimer", "LapTimer", "{509C7D1C-D77E-4AE1-9BEA-3A43EF7B676F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Apps.LapTimer.Simulation", "apps\LapTimer\Turbokart.Apps.LapTimer.Simulation\Turbokart.Apps.LapTimer.Simulation.csproj", "{55197C3A-CBAF-4EBF-9AAA-F2952F4E595E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Apps.LapTimer.ManualTests", "apps\LapTimer\Turbokart.Apps.LapTimer.ManualTests\Turbokart.Apps.LapTimer.ManualTests.csproj", "{B68693BD-A1DB-43D0-AFFF-8334E32BC27F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55197C3A-CBAF-4EBF-9AAA-F2952F4E595E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55197C3A-CBAF-4EBF-9AAA-F2952F4E595E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55197C3A-CBAF-4EBF-9AAA-F2952F4E595E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55197C3A-CBAF-4EBF-9AAA-F2952F4E595E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68693BD-A1DB-43D0-AFFF-8334E32BC27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68693BD-A1DB-43D0-AFFF-8334E32BC27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68693BD-A1DB-43D0-AFFF-8334E32BC27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68693BD-A1DB-43D0-AFFF-8334E32BC27F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{509C7D1C-D77E-4AE1-9BEA-3A43EF7B676F} = {B87C8AD4-7038-4AD7-A2BB-662B8419068F}
+		{55197C3A-CBAF-4EBF-9AAA-F2952F4E595E} = {509C7D1C-D77E-4AE1-9BEA-3A43EF7B676F}
+		{B68693BD-A1DB-43D0-AFFF-8334E32BC27F} = {509C7D1C-D77E-4AE1-9BEA-3A43EF7B676F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3CD60361-F8F7-45D0-812A-1DFFA7F45223}
