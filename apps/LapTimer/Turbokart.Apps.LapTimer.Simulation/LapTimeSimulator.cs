@@ -66,11 +66,5 @@
             }
             await Console.Out.WriteLineAsync(s);
         }
-        
-        private async Task<TimeSpan> CountDownOneSecond(TimeSpan currentTime)
-        {
-            await Task.Delay(1000);
-            return currentTime.Subtract(new TimeSpan(0, 0, 1));
-        }
     }
 }
