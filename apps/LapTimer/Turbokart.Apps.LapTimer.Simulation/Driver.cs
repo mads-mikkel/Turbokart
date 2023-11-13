@@ -33,24 +33,30 @@
                 // Calculate lap:
                 long minDeltaTicks = targetLapTime.Ticks - delta.Ticks;
                 long maxDeltaTicks = targetLapTime.Ticks + delta.Ticks;
-                double x = generator.NextDouble();
-                if(x > 0.8)
+                double p = generator.NextDouble();  // p is a probability between 0 and 1 (0% - 100%).
+                if(p > 0.8) // 20% probability of a faster lap than the plus minus 10%
                 {
                     minDeltaTicks -= delta.Ticks;
                 }
-                else if(x < 0.35)
+                else if(p < 0.35)   // 35% propability of a slower lap than the plus minus 10%
                 {
                     maxDeltaTicks += delta.Ticks;
                 }
+
+                // Get laptime as ticks between the new lower and upper bound:
                 long diff = generator.NextInt64(minDeltaTicks, maxDeltaTicks);
                 TimeSpan newLapTime = new TimeSpan(diff);
+
+                // Add this new laptime the the total race time for this kart:
                 totalTime += newLapTime;
+
+                // one more lap
                 ++CurrentLap;
 
-                // Do lap:
+                // This effectively "does" the lap, by waiting to publish the new laptime until the time has passed:
                 await Task.Delay(newLapTime);
 
-                // Notify
+                // Notify listeners (the simulator)
                 CrossedLineEventArgs e = new() { KartNo = KartNo, Lap = CurrentLap, LapTime = newLapTime, TotalTime = totalTime };
                 CrossedTheLine?.Invoke(this, e);
 
