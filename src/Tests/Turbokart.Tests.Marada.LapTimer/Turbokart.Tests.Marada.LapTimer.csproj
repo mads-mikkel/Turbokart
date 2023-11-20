@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Turbokart.Apps.LapTimer.Simulation\Marada.TimerTech.LaptimeSimulation.csproj" />
+    <ProjectReference Include="..\..\Application\Marada.LapTimer.Simulation\Marada.LapTimer.Simulation.csproj" />
   </ItemGroup>
+
+ 
 
 </Project>

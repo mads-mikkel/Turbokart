@@ -1,4 +1,4 @@
-﻿namespace Marada.TimerTech.LaptimeSimulation
+﻿namespace Marada.LapTimer.Simulation
 {
     internal class Kart
     {

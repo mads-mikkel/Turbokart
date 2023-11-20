@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2027C82C-6FD8-4994-A320-74F7B16E402E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenter", "Presenter", "{4180130D-DF9B-4A1B-BE5A-B8CD283E3AB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{330DB6A3-DF2C-4F76-B733-86EEDF43EECC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{029A9CBC-28A9-4968-837F-A234BBC69C08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C81AE92B-BBE1-49D5-95C7-A06843342A8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.Tests.Marada.LapTimer", "Tests\Turbokart.Tests.Marada.LapTimer\Turbokart.Tests.Marada.LapTimer.csproj", "{2D0D8943-E1F8-43FD-8083-1C40FCC41CA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marada.LapTimer.Simulation", "Application\Marada.LapTimer.Simulation\Marada.LapTimer.Simulation.csproj", "{0A022B97-84D8-4509-B4C6-11392DECBD7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D0D8943-E1F8-43FD-8083-1C40FCC41CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0D8943-E1F8-43FD-8083-1C40FCC41CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0D8943-E1F8-43FD-8083-1C40FCC41CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0D8943-E1F8-43FD-8083-1C40FCC41CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A022B97-84D8-4509-B4C6-11392DECBD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A022B97-84D8-4509-B4C6-11392DECBD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A022B97-84D8-4509-B4C6-11392DECBD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A022B97-84D8-4509-B4C6-11392DECBD7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D0D8943-E1F8-43FD-8083-1C40FCC41CA3} = {2027C82C-6FD8-4994-A320-74F7B16E402E}
+		{0A022B97-84D8-4509-B4C6-11392DECBD7D} = {330DB6A3-DF2C-4F76-B733-86EEDF43EECC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CD60361-F8F7-45D0-812A-1DFFA7F45223}
+	EndGlobalSection
+EndGlobal

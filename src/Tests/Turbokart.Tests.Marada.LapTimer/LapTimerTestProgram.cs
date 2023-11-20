@@ -1,4 +1,4 @@
-﻿using Marada.TimerTech.LaptimeSimulation;
+﻿using Marada.LapTimer.Simulation;
 
 namespace Turbokart.Apps.LapTimer.ManualTests
 {
